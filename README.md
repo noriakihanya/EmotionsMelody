@@ -4,7 +4,7 @@
 日本語の感情分析ライブラリHuggingface Transformersを用いてあなたの歌詞を分析し、歌詞の感情に適したコード進行を提示する。提示されたコード進行に基づいて音楽生成ライブラリMagentaで自動で音楽を生成する。
 
 # DEMO
-●「詩をコードに変換」セルの" text_to_chord("key","lyric") "に以下のように入力することで、コード進行が出力される。
+●「詩をコードに変換」セルの`text_to_chord("key","lyric") `に`key`と`lyric`を入力することで、コード進行が出力される。
 
 ```
 #ボブ・ディラン　風に吹かれて
@@ -41,32 +41,54 @@ la3 : G F# Bm
 
 # Features
 
-"hoge"のセールスポイントや差別化などを説明する
+・JーPOPのコード進行を学習したAIがデータベースから歌詞に適したコード進行を提示するため、音楽の知識がなくても作曲が可能
+
+・音楽学習生成ライブラリMagentaで学習させたモデルを用いているため、別途自分で学習させたモデルを使用することで自分好みの音楽を生成させることが可能
+
+・複数のMIDIファイルを結合させているため、Magentaよりも複雑な音楽を生成することが可能
+
+・生成された音楽はMIDIファイルとして取得することができるため、最終的に自分で自由に編集が可能
 
 # Requirement
 
-"hoge"を動かすのに必要なライブラリなどを列挙する
-
-* huga 3.5.2
-* hogehuga 1.0.2
+* Magenta
+* Transformers
 
 # Installation
 
-Requirementで列挙したライブラリなどのインストール方法を説明する
+パッケージのインストール
 
-```bash
-pip install huga_package
+```
+!git clone https://github.com/noriakihanya/EmotionsMelody.git
+!pip install -r /content/EmotionsMelody/requirements.txt
+!apt install fluidsynth
+!cp /usr/share/sounds/sf2/FluidR3_GM.sf2 ./font.sf2
+!pip install midi2audio
 ```
 
 # Usage
 
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
+Google Colaboratoryを使用する場合、基本的にセルを上から順番に実行することができるため「詩をコードに変換」セルの使い方について以下で説明
 
-```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
+「詩をコードに変換」セルの`text_to_chord("key","lyric")`にそれぞれ以下のように入力する。
+
+・keyはC G D A E B F# C# F Bb Eb Ab Db Gb Cb　から選択
+
+・lyrci:"la+n"を入力することで、n個分のコード進行がランダムで表示される。現在１〜１０まで対応（９は対象なし）
+なお、n個分のコード進行が得られないことがあるため、任意のコード進行が得られるまで実行ボタンを押下してください。
+
+以下のように入力するとコード３つ分のコード進行が出力される（が、コードが１つや２つの時もあるため何度か実行ボタンを押して任意のコード数を出力させる）。
+
+※対応方法については検討中
+
 ```
+text_to_chord("D","la3")
+```
+```
+la3 : G F# Bm
+```
+
+・歌詞を増やす場合、text_to_chord("key","lyric")をコピー&ペーストすることで、任意の場所に音楽を生成させることができる
 
 # Note
 
