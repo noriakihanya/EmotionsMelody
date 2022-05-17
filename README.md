@@ -29,7 +29,12 @@ la3 : G F# Bm
 la3 : G F# Bm
 ```
 
-そして、「Magentaでメロディを生成」「」
+「Magentaでメロディを生成」「生成音楽の再生」を実行することで、生成された音楽を確認することができる。
+<img width="583" alt="スクリーンショット 2022-05-17 14 01 40" src="https://user-images.githubusercontent.com/105255463/168732872-b32556e3-0a57-4ad8-aa47-e4392ffdea2a.png">
+
+生成された音楽は以下のようになっている。
+<img width="1007" alt="スクリーンショット 2022-05-17 14 05 11" src="https://user-images.githubusercontent.com/105255463/168733178-60228405-42bb-4e3e-b14c-9646b1708009.png">
+※MIDIファイルが出力されるためDAWソフトなどで自由に編集することも可能
 
 # Features
 
