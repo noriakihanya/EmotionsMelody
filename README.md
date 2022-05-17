@@ -98,6 +98,11 @@ la3 : G F# Bm
 
 上記に対応するために今後の取り組みとして、より多くの音楽を学習させ、学習させる音楽を緻密に分類し同じような曲調を集めて学習させることで、より歌詞の内容に沿った音楽が生成されるように工夫したい。
 
+# Reference
+
+* magenta:https://github.com/magenta/magenta
+* transformers:https://github.com/huggingface/transformers
+
 # Author
 
 * Noriaki HANYA
