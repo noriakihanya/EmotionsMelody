@@ -1,7 +1,7 @@
 # EmotionsMelody
-***- Your words will be music. -***
+***- あなたの言葉が音楽になる -***
 
-日本語の感情分析ライブラリHuggingface Transformersを用いてあなたの歌詞を分析し、歌詞の感情に適したコード進行を提示する。提示されたコード進行に基づいて音楽生成ライブラリMagentaで自動で音楽を生成する。
+日本語の感情分析ライブラリHuggingface Transformersを用いて歌詞を分析し、歌詞の感情に適したコード進行を提示する。提示されたコード進行に基づいて音楽生成ライブラリMagentaで自動で音楽を生成する。
 
 # DEMO
 ●「詩をコードに変換」セルの`text_to_chord("key","lyric") `に`key`と`lyric`を入力することで、コード進行が出力される。
@@ -90,9 +90,12 @@ la3 : G F# Bm
 
 ・歌詞を増やす場合、text_to_chord("key","lyric")をコピー&ペーストすることで、任意の場所に音楽を生成させることができる
 
-# Note
+# Issue
 
-注意点などがあれば書く
+今後の課題
+
+・今回使用しているモデル
+
 
 # Author
 
