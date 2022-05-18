@@ -37,7 +37,7 @@ la3 : G F# Bm
 
 生成された音楽ファイルの中身は以下のようになっている。
 <img width="1007" alt="スクリーンショット 2022-05-17 14 05 11" src="https://user-images.githubusercontent.com/105255463/168733178-60228405-42bb-4e3e-b14c-9646b1708009.png">
-※MIDIファイルが出力されるためDAWソフトなどで自由に編集することも可能
+※`data/04_EmotionsMelody/`にMIDIファイルが出力されるので、DAWソフトなどで自由に編集することも可能
 
 # Features
 
