@@ -102,9 +102,3 @@ la3 : G F# Bm
 
 * magenta:https://github.com/magenta/magenta
 * transformers:https://github.com/huggingface/transformers
-
-# Author
-
-* Noriaki HANYA
-* E-mail
-
