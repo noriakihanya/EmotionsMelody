@@ -33,11 +33,9 @@ la3 : G F# Bm
 
 ●「生成音楽の再生」の実行で、生成された音楽を確認
 
-<img width="583" alt="スクリーンショット 2022-05-17 14 01 40" src="https://user-images.githubusercontent.com/105255463/168732872-b32556e3-0a57-4ad8-aa47-e4392ffdea2a.png">
+<img width="611" alt="スクリーンショット 2022-05-19 12 17 31" src="https://user-images.githubusercontent.com/105255463/169197056-65175c22-9c54-4f2e-b26b-dae1c9470524.png">
 
-生成された音楽ファイルの中身は以下のようになっている。
-<img width="1007" alt="スクリーンショット 2022-05-17 14 05 11" src="https://user-images.githubusercontent.com/105255463/168733178-60228405-42bb-4e3e-b14c-9646b1708009.png">
-※`data/04_EmotionsMelody/`にMIDIファイルが出力されるので、DAWソフトなどで自由に編集することも可能
+生成された音楽をMIDIファイルとしてダウンロードし、DAWソフトなどで自由に編集することも可能
 
 # Features
 
